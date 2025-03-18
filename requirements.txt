@@ -1,0 +1,10 @@
+pandas
+openai
+sentence-transformers
+numpy==1.26.4
+scikit-learn
+python-dotenv
+watchdog
+PyPDF2
+python-docx
+gradio
