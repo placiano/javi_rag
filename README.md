@@ -1,6 +1,6 @@
 # Chatbot RAG con Gradio y GPT-4o-mini
 
-Este proyecto crea un chatbot que responde preguntas basadas en documentos (CSV, JSON, XLSX) usando un sistema RAG (Retrieval-Augmented Generation) con GPT-4o-mini como modelo de lenguaje y Gradio como interfaz.
+Este proyecto crea un chatbot que responde preguntas basadas en documentos (CSV, JSON, XLSX, DOCX, PDF y TXT) usando un sistema RAG (Retrieval-Augmented Generation) con GPT-4o-mini como modelo de lenguaje y Gradio como interfaz.
 
 ## Requisitos previos
 
@@ -9,8 +9,6 @@ Este proyecto crea un chatbot que responde preguntas basadas en documentos (CSV,
    ```bash
    python --version
    ```
-
-Asegúrate de que el bloque de código esté correctamente cerrado y que no haya espacios o caracteres adicionales que puedan interferir con la renderización. Si el problema persiste, verifica que no haya errores en otras partes del archivo que puedan afectar la previsualización.
 
 Si no tienes Python 3.11, descárgalo e instálalo.
 
@@ -43,7 +41,7 @@ cd javi_rag
 
 ### 2. Abrir la terminal
 Abre una terminal en la carpeta del proyecto que acabas de descomprimir:
-- **Windows**: Haz clic derecho en la carpeta, selecciona "Abrir en terminal" o usa CMD/PowerShell y navega con `cd camino/a/javi_rag`.
+- **Windows**: Haz clic derecho en la carpeta, selecciona "Abrir en terminal" o usa CMD/PowerShell y navega con `cd ruta/a/javi_rag`.
 - **Mac/Linux**: Abre la terminal y usa `cd /ruta/a/javi_rag`.
 
 ### 3. Configurar el entorno con `setup.py`
@@ -74,7 +72,7 @@ python app.py
 - Si no se abre, copia la URL que aparece en la terminal (como `http://localhost:8501`) y pégala en tu navegador.
 
 ### 6. Usar el chatbot
-- **Subir documentos**: Haz clic en "Choose files" y selecciona archivos CSV, JSON o XLSX desde tu computadora.
+- **Subir documentos**: Haz clic en "Sube tus documentos" y selecciona archivos CSV, JSON, XLSX, DOCX, PDF y TXT desde tu computadora.
 - **Chatear**: Escribe una pregunta en el campo de texto (ej. "¿Qué dice el archivo sobre ventas?") y presiona Enter.
 - **Reiniciar**: Usa el botón "Reiniciar chat y documentos" para empezar de nuevo.
 
@@ -89,5 +87,5 @@ python app.py
 - Cambia el modelo en `app.py` (línea con `client.chat.completions.create`) si quieres usar otro modelo de OpenAI.
 - Añade más formatos de archivo editando la función `read_file` en `app.py`.
 
-¡Disfruta de tu chatbot! Si algo no funciona, busca en Google o pide ayuda a alguien con experiencia.
+¡Disfruta de tu chatbot!
 ```
